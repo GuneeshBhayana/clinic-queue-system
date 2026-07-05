@@ -13,7 +13,7 @@ const BookingForm = () => {
     if (!phoneRegex.test(phone)) return alert('Phone must be 10 digits');
 
     try {
-      const { data } = await axios.post('http://https://clinic-queue-system-6xjj.onrender.com/api/queue/join', { 
+      const { data } = await axios.post('https://clinic-queue-system-6xjj.onrender.com/api/queue/join', { 
         customerName: name, 
         phone 
       });
