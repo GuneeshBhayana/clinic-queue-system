@@ -62,7 +62,7 @@ const Dashboard = () => {
     }
   };
 
-  if (!isAuthenticated) {
+if (!isAuthenticated) {
     return (
       <div style={{ marginTop: '50px' }}>
         <h2>Admin Login</h2>
@@ -75,6 +75,10 @@ const Dashboard = () => {
           />
           <button type="submit">Login</button>
         </form>
+        {/* ADD THIS LINE */}
+        <p style={{ marginTop: '10px', fontSize: '14px', color: '#555' }}>
+          Hint: Password is <strong>admin123</strong>
+        </p>
       </div>
     );
   }
