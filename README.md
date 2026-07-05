@@ -1,4 +1,6 @@
 Clinic Queue Management System
+Live Demo: https://clinic-queue-system-five.vercel.app/
+
 A full-stack MERN application engineered to streamline patient flow and queue management in clinical settings.
 
 Core Functionality
@@ -19,7 +21,11 @@ Backend: Node.js, Express.js
 
 Database: MongoDB Atlas
 
+Deployment: Vercel (Frontend), Render (Backend)
+
 Installation & Local Execution
+If you want to run this application on your local machine for development, follow these steps:
+
 Prerequisites
 Node.js installed on your machine.
 
@@ -27,7 +33,7 @@ A MongoDB Atlas connection string.
 
 Setup
 Clone the repository
-git clone 
+git clone https://github.com/GuneeshBhayana/clinic-queue-system
 cd clinic-queue-system
 
 Configure Environment Variables
@@ -45,4 +51,4 @@ cd ../client
 npm install
 npm start
 
-Access the application at http://localhost:3000. The admin interface is accessible via /admin (password: admin123).
+Once running locally, access the application at http://localhost:3000. The admin interface is accessible via /admin (Password: admin123).
