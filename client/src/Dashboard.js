@@ -26,7 +26,7 @@ const Dashboard = () => {
 
   const fetchQueue = async () => {
     try {
-      const { data } = await axios.get('http://localhost:5000/api/queue');
+      const { data } = await axios.get('https://clinic-queue-system-6xjj.onrender.com/api/queue');
       setQueue(data);
     } catch (err) {
       console.error('Fetch error:', err);
@@ -35,7 +35,7 @@ const Dashboard = () => {
 
   const updateStatus = async (id, status) => {
     try {
-      await axios.patch(`http://localhost:5000/api/queue/${id}`, { status });
+      await axios.patch(`https://clinic-queue-system-6xjj.onrender.com/api/queue/${id}`, { status });
       fetchQueue();
     } catch (err) {
       console.error('Update error:', err);
@@ -44,7 +44,7 @@ const Dashboard = () => {
 
   const deleteEntry = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/queue/${id}`);
+      await axios.delete(`https://clinic-queue-system-6xjj.onrender.com/api/queue/${id}`);
       fetchQueue();
     } catch (err) {
       console.error('Delete error:', err);
