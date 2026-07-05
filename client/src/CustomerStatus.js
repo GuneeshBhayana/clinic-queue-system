@@ -8,7 +8,7 @@ const CustomerStatus = () => {
 
   const checkStatus = async () => {
     try {
-      const { data } = await axios.get('http://localhost:5000/api/queue');
+      const { data } = await axios.get('http://https://clinic-queue-system-6xjj.onrender.com/api/queue');
       const queue = data.filter((q) => q.status === 'waiting');
       
       const index = queue.findIndex((q) => 

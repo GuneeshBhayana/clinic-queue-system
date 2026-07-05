@@ -54,7 +54,7 @@ const Dashboard = () => {
   const clearAll = async () => {
     if (window.confirm('Clear all entries?')) {
       try {
-        await axios.delete('http://localhost:5000/api/queue/clear/all');
+        await axios.delete('http://https://clinic-queue-system-6xjj.onrender.com/api/queue/clear/all');
         fetchQueue();
       } catch (err) {
         console.error('Clear error:', err);
